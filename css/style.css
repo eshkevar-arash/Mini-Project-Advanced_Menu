@@ -1,0 +1,125 @@
+
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background-color: #f7f8fd;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+header{
+
+}
+.container{
+    width: 100%;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+
+.nav-bar{
+    background-color: white;
+    box-shadow: 0 2px 8px 0 rgba(99,99,99,.2);
+    margin-top: 0;
+
+}
+.nav-bar__wrapper{
+    padding: 1.6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    height: 100%;
+}
+.left__logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.left__image{
+    width: 50px;
+}
+.left__title{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.center{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.center__list{
+   display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 3rem;
+    flex-wrap: nowrap;
+}
+.center__list-item{
+    height: 100%;
+
+}
+.center__list-link{
+    height: 100%;
+}
+.center__list-link--active{
+    background-image: linear-gradient(71deg ,#3ac2ff 50%,#2f56ff);
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 22px;
+    font-weight: bold;
+}
+.right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    gap: 3rem;
+}
+.right__icons {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    top: 3px;
+}
+.right__profile{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.right__status-connection{
+    width: 67px;
+    background-color: #edfdfa;
+    padding: 0.4rem;
+    border-radius: 3px;
+    text-align: center;
+    color: #1f927f;
+}
+.right__image{
+    width: 50px;
+    border-radius: 50%;
+}
+.mobile-menu{
+    display: none;
+}
+
+
+

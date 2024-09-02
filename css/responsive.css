@@ -1,0 +1,175 @@
+@media screen and (min-width: 576px) {
+    .container {
+        width: 54rem;
+    }
+
+
+
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 72rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .container {
+        width: 96rem;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 114rem;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .container {
+        width: 137rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    .left__image{
+        width: 36px;
+    }
+    .left__title{
+        font-size: 1.6rem;
+    }
+    .center__list-link--active{
+        padding: .6rem;
+    }
+    .center__list-link{
+        font-size: 1.28rem;
+    }
+    .center__list{
+        gap: 2rem;
+    }
+    .right__icons svg{
+        width: 13px;
+    }
+    .right__status-connection{
+        width: 5.7rem;
+        padding: .32rem;
+        font-size: 1.28rem;
+    }
+    .right{
+        gap: 2rem;
+    }
+    .right__profile{
+        gap: 1.5rem;
+    }
+    .right__image{
+        width: 4rem;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .mobile-menu{
+        display: block;
+        position: relative;
+    }
+    .center{
+        display: none;
+    }
+    .right{
+        flex-grow: 1;
+    }
+    #checkBox{
+        opacity: 0;
+        position: absolute;
+
+    }
+
+    .mobile-menu__label{
+        cursor: pointer;
+        margin-left: 2rem;
+        display: block;
+        height: 1.5rem;
+        width: 1.5rem;
+        position: relative;
+
+    }
+    .line{
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        border-radius: 1rem;
+        transition: all 260ms ease-out;
+        position: relative;
+        margin-bottom: 3px;
+    }
+    .line-1{
+
+    }
+    .line-2{
+
+    }
+    .line-3{
+        margin-bottom: 0;
+    }
+    #checkBox:checked + label .line-1{
+        transform: rotate(45deg);
+        top: 6px;
+        width: 125%;
+        left: -2px;
+    }
+    #checkBox:checked + label .line-2{
+    transform: translateX(100%);
+        opacity: 0;
+    }
+    #checkBox:checked + label .line-3{
+        transform: rotate(-45deg);
+        top: -5px;
+        width: 125%;
+        left: -2px;
+    }
+    .mobile-nav{
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 1000;
+        padding: 4rem 1rem 3rem 3rem;
+        transform: translateX(-300px);
+        transition: all 250ms ease-out;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: start;
+    }
+    #checkBox:checked + label + ul{
+        transform: translateX(0);
+    }
+    .mobile-nav .center__list-item{
+        height: auto;
+    }
+}
+@media screen and (max-width: 400px) {
+    .left__image{
+        width: 2.7rem;
+    }
+    .left__title{
+        font-size: 1.4rem;
+    }
+    .right__status-connection{
+        font-size: 1.1rem;
+        width: 4.5rem;
+    }
+    .right__image{
+        width: 3.5rem;
+    }
+    .right__icons{
+        gap: 1rem;
+    }
+    .right__profile{
+        gap: 1rem;
+    }
+    .mobile-menu__label{
+        margin-left: 1.2rem;
+    }
+    .right{
+        gap: 1.5rem;
+    }
+}
